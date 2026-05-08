@@ -1299,6 +1299,21 @@ function fmbToggleFaq(btn) {
 
 
 
+<!-- Height broadcaster for GHL iframe -->
+<script>
+(function() {
+  function sendHeight() {
+    var height = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    window.parent.postMessage({ type: 'fixmybiz-height', height: height }, '*');
+  }
+  sendHeight();
+  setInterval(sendHeight, 500);
+  window.addEventListener('resize', sendHeight);
+  // Also send after FAQ toggles or any DOM change
+  new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+})();
+</script>
+
 <!-- Consolidated Session 4 overrides -->
 <style>
   .fmb-demo-cta-btn {

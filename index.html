@@ -1,0 +1,1369 @@
+<!-- SECTION 1: Top Banner -->
+<style>
+.fmb-banner {
+  background-color: #0d1b2a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+.fmb-banner a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.fmb-banner a:hover {
+  text-decoration: underline;
+}
+</style>
+<div class="fmb-banner">
+  Speak to Melina &nbsp;<a href="tel:+448000884813">+44 800 088 4813</a>
+</div>
+
+
+<!-- SECTION 2: Sticky Header / Navigation -->
+<style>
+.fmb-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.fmb-header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1b2a;
+  text-decoration: none;
+}
+.fmb-header-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.fmb-header-nav a {
+  color: #374151;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.fmb-header-nav a:hover {
+  color: #0d9488;
+}
+.fmb-header-cta {
+  background: #0d1b2a;
+  color: #ffffff !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.2s;
+}
+.fmb-header-cta:hover {
+  background: #1a2d42;
+}
+@media (max-width: 768px) {
+  .fmb-header { padding: 12px 20px; flex-wrap: wrap; gap: 12px; }
+  .fmb-header-nav { gap: 16px; flex-wrap: wrap; justify-content: center; }
+}
+</style>
+<div class="fmb-header">
+  <a href="#" class="fmb-header-logo">
+    <!-- Replace src with your uploaded logo URL -->
+    <svg width="32" height="32" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0"><circle cx="32" cy="32" r="30" fill="#0d9488"/><path d="M32 18c-1.5 0-2.8.6-3.8 1.6L26 21.8l-2.2-2.2c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8l2.2 2.2-2.2 2.2c-.4.4-.6.9-.6 1.4 0 .5.2 1 .6 1.4l8 8c.4.4.9.6 1.4.6s1-.2 1.4-.6l8-8c.8-.8.8-2 0-2.8L36 21.8l-2.2-2.2c-1-1-2.3-1.6-3.8-1.6z" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 38l4 4M26 38l4 4M30 38l4 4M34 38l4 4M38 38l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    Fix My Biz
+  </a>
+  <nav class="fmb-header-nav">
+    <a href="#problem">The problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#how-it-works">How it works</a>
+    <a href="#faq">FAQ</a>
+    <a href="#demo" class="fmb-header-cta">Try the live demo</a>
+  </nav>
+</div>
+
+
+<!-- SECTION 3+4: Hero (Logo + Headline + CTA) -->
+<style>
+.fmb-hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fmb-hero-logo-wrap {
+  margin-bottom: 40px;
+}
+.fmb-hero-logo-wrap img {
+  width: 280px;
+  max-width: 80%;
+}
+.fmb-hero-tagline {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: #6b7280;
+  margin-top: 12px;
+}
+.fmb-hero h1 {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.1;
+  margin: 0 auto 24px;
+  max-width: 700px;
+}
+.fmb-hero-sub {
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+.fmb-hero-btn {
+  display: inline-block;
+  background: #0d1b2a;
+  color: #ffffff;
+  padding: 18px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+.fmb-hero-btn:hover {
+  background: #1a2d42;
+  transform: translateY(-1px);
+}
+.fmb-hero-note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+</style>
+<div class="fmb-hero">
+  <div class="fmb-hero-logo-wrap">
+    <svg width="220" height="220" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="30" fill="#0d9488"/><path d="M32 18c-1.5 0-2.8.6-3.8 1.6L26 21.8l-2.2-2.2c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8l2.2 2.2-2.2 2.2c-.4.4-.6.9-.6 1.4 0 .5.2 1 .6 1.4l8 8c.4.4.9.6 1.4.6s1-.2 1.4-.6l8-8c.8-.8.8-2 0-2.8L36 21.8l-2.2-2.2c-1-1-2.3-1.6-3.8-1.6z" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 38l4 4M26 38l4 4M30 38l4 4M34 38l4 4M38 38l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    <div class="fmb-hero-tagline">SOLVE. GROW. SUCCEED</div>
+  </div>
+  <h1>Never miss a call or lead, again.</h1>
+  <p class="fmb-hero-sub">Nearly two-thirds of UK enquiries are lost to voicemail. Our AI employees answer every call, qualify every lead, and book every appointment. Day or night.</p>
+  <a href="#demo" class="fmb-hero-btn">Get your free demo</a>
+  <p class="fmb-hero-note">No credit card. Live in under 24 hours. Hear it for yourself.</p>
+</div>
+
+
+<!-- SECTION 5: THE PROBLEM - Stats Cards -->
+<style>
+.fmb-problem {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fmb-problem-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d9488;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.fmb-problem h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.15;
+  margin: 0 auto 16px;
+  max-width: 650px;
+}
+.fmb-problem-sub {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0 auto 48px;
+}
+.fmb-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fmb-stat-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px 24px;
+}
+.fmb-stat-num {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.fmb-stat-desc {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .fmb-stats-grid { grid-template-columns: 1fr; max-width: 400px; }
+}
+</style>
+<div class="fmb-problem" id="problem">
+  <div class="fmb-problem-label">THE PROBLEM</div>
+  <h2>Every missed call is a missed customer.</h2>
+  <p class="fmb-problem-sub">Inbound enquiries don't wait. If your phone rings out or your website chat goes unanswered, the next call goes to your competitor.</p>
+  <div class="fmb-stats-grid">
+    <div class="fmb-stat-card">
+      <div class="fmb-stat-num">64%</div>
+      <div class="fmb-stat-desc">of UK calls go unanswered after hours</div>
+    </div>
+    <div class="fmb-stat-card">
+      <div class="fmb-stat-num">80%</div>
+      <div class="fmb-stat-desc">of callers won't leave a voicemail</div>
+    </div>
+    <div class="fmb-stat-card">
+      <div class="fmb-stat-num">90s</div>
+      <div class="fmb-stat-desc">is all a website visitor will wait for a reply</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SECTION 6: Cost Calculator -->
+<style>
+.fmb-calc {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.fmb-calc h2 {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 800;
+  color: #0d1b2a;
+  margin-bottom: 8px;
+}
+.fmb-calc-intro {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+.fmb-calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+.fmb-calc-sliders { display: flex; flex-direction: column; gap: 32px; }
+.fmb-slider-group label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0d1b2a;
+  margin-bottom: 12px;
+}
+.fmb-slider-group label span { color: #374151; font-weight: 700; }
+.fmb-slider-group input[type="range"] {
+  width: 100%;
+  height: 6px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #e5e7eb;
+  border-radius: 3px;
+  outline: none;
+}
+.fmb-slider-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px; height: 20px;
+  background: #0d1b2a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fmb-slider-group .fmb-slider-hint {
+  font-size: 13px;
+  color: #9ca3af;
+  margin-top: 6px;
+}
+.fmb-calc-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d1b2a;
+  margin-top: 8px;
+}
+.fmb-calc-result {
+  text-align: center;
+  padding: 40px 24px;
+}
+.fmb-calc-result-label {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+.fmb-calc-result-amount {
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1;
+}
+.fmb-calc-result-note {
+  font-size: 15px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+.fmb-calc-breakdown {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 24px;
+}
+.fmb-calc-breakdown-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 24px;
+  text-align: center;
+}
+.fmb-calc-breakdown-item .period { font-size: 13px; color: #6b7280; }
+.fmb-calc-breakdown-item .amount { font-size: 20px; font-weight: 700; color: #0d1b2a; margin-top: 4px; }
+@media (max-width: 768px) {
+  .fmb-calc-grid { grid-template-columns: 1fr; }
+}
+</style>
+<div class="fmb-calc">
+  <h2>See what missed calls really cost you.</h2>
+  <p class="fmb-calc-intro">Drag the sliders. Watch the number move.</p>
+  <div class="fmb-calc-grid">
+    <div class="fmb-calc-sliders">
+      <div class="fmb-slider-group">
+        <label>Missed calls per week <span id="fmb-calls-val">13</span></label>
+        <input type="range" id="fmb-calls" min="1" max="50" value="13" oninput="fmbCalc()">
+      </div>
+      <div class="fmb-slider-group">
+        <label>Average sale value</label>
+        <input type="text" class="fmb-calc-input" id="fmb-sale" value="300" oninput="fmbCalc()">
+        <div class="fmb-slider-hint">Typical revenue from one closed customer.</div>
+      </div>
+      <div class="fmb-slider-group">
+        <label>Close rate <span id="fmb-rate-val">30%</span></label>
+        <input type="range" id="fmb-rate" min="5" max="80" value="30" oninput="fmbCalc()">
+      </div>
+    </div>
+    <div class="fmb-calc-result">
+      <div class="fmb-calc-result-label">Going to your competition</div>
+      <div class="fmb-calc-result-amount" id="fmb-annual">&pound;60,840</div>
+      <div class="fmb-calc-result-note">per year, in missed calls alone</div>
+      <div class="fmb-calc-breakdown">
+        <div class="fmb-calc-breakdown-item">
+          <div class="period">Weekly</div>
+          <div class="amount" id="fmb-weekly">&pound;1,170</div>
+        </div>
+        <div class="fmb-calc-breakdown-item">
+          <div class="period">Monthly</div>
+          <div class="amount" id="fmb-monthly">&pound;5,070</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+function fmbCalc() {
+  var calls = parseInt(document.getElementById('fmb-calls').value);
+  var sale = parseInt(document.getElementById('fmb-sale').value.replace(/[^0-9]/g,'')) || 0;
+  var rate = parseInt(document.getElementById('fmb-rate').value);
+  document.getElementById('fmb-calls-val').textContent = calls;
+  document.getElementById('fmb-rate-val').textContent = rate + '%';
+  var weekly = Math.round(calls * sale * (rate/100));
+  var monthly = Math.round(weekly * 52/12);
+  var annual = weekly * 52;
+  document.getElementById('fmb-weekly').innerHTML = '&pound;' + weekly.toLocaleString();
+  document.getElementById('fmb-monthly').innerHTML = '&pound;' + monthly.toLocaleString();
+  document.getElementById('fmb-annual').innerHTML = '&pound;' + annual.toLocaleString();
+}
+</script>
+
+
+<!-- SECTION 7: THE SOLUTION - Feature Cards -->
+<style>
+.fmb-solution {
+  text-align: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fmb-solution-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d9488;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.fmb-solution h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: #0d1b2a;
+  margin: 0 auto 16px;
+}
+.fmb-solution-sub {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 580px;
+  margin: 0 auto 48px;
+}
+.fmb-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+}
+.fmb-feature-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px 24px;
+}
+.fmb-feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #0d9488;
+  margin-bottom: 20px;
+}
+.fmb-feature-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin: 0 0 12px;
+}
+.fmb-feature-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .fmb-features-grid { grid-template-columns: 1fr; max-width: 400px; }
+}
+</style>
+<div class="fmb-solution" id="solution">
+  <div class="fmb-solution-label">THE SOLUTION</div>
+  <h2>Meet your AI employee.</h2>
+  <p class="fmb-solution-sub">One assistant that answers your phone, replies to your website chat, and books appointments straight into your calendar. In your brand's voice.</p>
+  <div class="fmb-features-grid">
+    <div class="fmb-feature-card">
+      <div class="fmb-feature-icon">&#128222;</div>
+      <h3>Voice receptionist</h3>
+      <p>Picks up every call within two seconds. Sounds like a real person. Hands off to your team when needed.</p>
+    </div>
+    <div class="fmb-feature-card">
+      <div class="fmb-feature-icon">&#128172;</div>
+      <h3>Website chat</h3>
+      <p>Replies the moment a visitor types. Answers questions about your services, pricing, opening hours, anything you can teach it.</p>
+    </div>
+    <div class="fmb-feature-card">
+      <div class="fmb-feature-icon">&#128197;</div>
+      <h3>Calendar booking</h3>
+      <p>Reads your availability and books appointments live. Direct into Google or Outlook, with a confirmation text on the way.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- SECTION 8: TRY IT NOW - Demo Section with Phone Mockup -->
+<style>
+.fmb-demo {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.fmb-demo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.fmb-demo-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d9488;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.fmb-demo-left h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+.fmb-demo-left p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0 0 32px;
+}
+.fmb-demo-checks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fmb-demo-checks li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.fmb-check-icon {
+  color: #0d9488;
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.fmb-demo-checks li strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 4px;
+}
+.fmb-demo-checks li span {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* Phone mockup */
+.fmb-phone {
+  background: linear-gradient(135deg, #0d9488, #0d1b2a);
+  border-radius: 32px;
+  padding: 16px;
+  max-width: 340px;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+}
+.fmb-phone-inner {
+  background: linear-gradient(180deg, #0d9488, #0a7a70);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.fmb-phone-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.fmb-phone-header {
+  text-align: center;
+  padding: 12px 20px;
+  color: #ffffff;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.fmb-phone-chat {
+  background: rgba(255,255,255,0.1);
+  border-radius: 16px 16px 0 0;
+  padding: 16px;
+  min-height: 260px;
+}
+.fmb-phone-chat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.fmb-phone-avatar {
+  width: 28px; height: 28px;
+  background: #0d9488;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.fmb-phone-chat-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.fmb-phone-online {
+  font-size: 12px;
+  color: #34d399;
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+.fmb-phone-bubble {
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 16px;
+}
+.fmb-phone-bubble-name {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 6px;
+}
+.fmb-phone-bubble p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  margin: 0;
+}
+.fmb-phone-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.fmb-phone-submit {
+  width: 100%;
+  padding: 14px;
+  background: #ffffff;
+  color: #0d1b2a;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.fmb-phone-footer {
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+.fmb-demo-cta-btn {
+  display: inline-block;
+  background: #0d1b2a;
+  color: #ffffff;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 32px;
+  transition: background 0.2s;
+}
+.fmb-demo-cta-btn:hover { background: #1a2d42; }
+
+@media (max-width: 768px) {
+  .fmb-demo-grid { grid-template-columns: 1fr; }
+  .fmb-phone { max-width: 300px; }
+}
+</style>
+<div class="fmb-demo" id="demo">
+  <div class="fmb-demo-grid">
+    <div class="fmb-demo-left">
+      <div class="fmb-demo-label">TRY IT NOW</div>
+      <h2>Hear it. Talk to it. Decide for yourself.</h2>
+      <p>Stop reading. The fastest way to understand what an AI employee does is to talk to one. Tap the "Try the live demo" button, give us your business URL, and we'll role-play a real customer enquiry for you in under thirty seconds.</p>
+      <ul class="fmb-demo-checks">
+        <li>
+          <span class="fmb-check-icon">&#10003;</span>
+          <div>
+            <strong>Trained on your business</strong>
+            <span>Pulls from your website, services, and FAQs. Speaks fluently about what you actually do.</span>
+          </div>
+        </li>
+        <li>
+          <span class="fmb-check-icon">&#10003;</span>
+          <div>
+            <strong>Books straight into your calendar</strong>
+            <span>Real-time availability. No double-bookings. No back-and-forth.</span>
+          </div>
+        </li>
+        <li>
+          <span class="fmb-check-icon">&#10003;</span>
+          <div>
+            <strong>Hands off when humans are needed</strong>
+            <span>Set the rules. VIPs, complex queries, or specific keywords transfer to your team instantly.</span>
+          </div>
+        </li>
+      </ul>
+      <a href="#demo" class="fmb-demo-cta-btn">Try the live demo</a>
+    </div>
+    <div class="fmb-demo-right">
+      <div class="fmb-phone">
+        <div class="fmb-phone-inner">
+          <div class="fmb-phone-status">
+            <span>9:41</span>
+            <span>&#8226;&#8226;&#8226; &#9632;</span>
+          </div>
+          <div class="fmb-phone-header">F I X &nbsp; M Y &nbsp; B I Z</div>
+          <div class="fmb-phone-chat">
+            <div class="fmb-phone-chat-header">
+              <div class="fmb-phone-avatar">M</div>
+              <span class="fmb-phone-chat-title">AI Assistant Demo</span>
+            </div>
+            <div class="fmb-phone-online">&#9679; Online</div>
+            <div class="fmb-phone-bubble">
+              <div class="fmb-phone-bubble-name">Melina &middot; just now</div>
+              <p>Hi, I'm Melina. Tell me what kind of business you run and I'll show you how I'd handle a real customer enquiry.</p>
+            </div>
+            <input type="text" class="fmb-phone-input" placeholder="Your name" disabled>
+            <input type="text" class="fmb-phone-input" placeholder="your@email.co.uk" disabled>
+            <button class="fmb-phone-submit" disabled>Start demo</button>
+          </div>
+          <div class="fmb-phone-footer">Powered by Fix My Biz</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SECTION: HOW IT WORKS - Three Steps -->
+<style>
+.fmb-how {
+  text-align: center;
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fmb-how-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d9488;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.fmb-how h2 {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: #0d1b2a;
+  margin: 0 auto 16px;
+}
+.fmb-how-sub {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 56px;
+}
+.fmb-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+.fmb-step-num {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0d9488;
+  margin-bottom: 16px;
+}
+.fmb-step h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin: 0 0 12px;
+}
+.fmb-step p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .fmb-steps-grid { grid-template-columns: 1fr; max-width: 400px; }
+}
+</style>
+<div class="fmb-how" id="how-it-works">
+  <div class="fmb-how-label">HOW IT WORKS</div>
+  <h2>Three steps. Live in a day.</h2>
+  <p class="fmb-how-sub">Most clients are answering customers within 24 hours of signup.</p>
+  <div class="fmb-steps-grid">
+    <div class="fmb-step">
+      <div class="fmb-step-num">01</div>
+      <h3>Tell us about your business</h3>
+      <p>Share your website, opening hours, services, and FAQs. We use this to train your AI employee on your voice and what you actually sell.</p>
+    </div>
+    <div class="fmb-step">
+      <div class="fmb-step-num">02</div>
+      <h3>We build your AI employee</h3>
+      <p>Voice, chat, calendar, CRM. Configured by our team and reviewed by you before it ever speaks to a customer.</p>
+    </div>
+    <div class="fmb-step">
+      <div class="fmb-step-num">03</div>
+      <h3>Go live, capture every lead</h3>
+      <p>Forward your calls, embed the chat widget, and watch your AI employee work the phones. While you focus on the work that pays.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- SECTION 9: Social Proof Stats with Sources + CTA -->
+<style>
+.fmb-proof {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+}
+.fmb-proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 960px;
+  margin: 0 auto 48px;
+  text-align: left;
+}
+.fmb-proof-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fmb-proof-num {
+  font-size: clamp(36px, 4.5vw, 52px);
+  font-weight: 800;
+  color: #0d1b2a;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.fmb-proof-desc {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.5;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+.fmb-proof-source {
+  font-size: 13px;
+  color: #9ca3af;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 16px;
+}
+.fmb-proof-cta {
+  display: inline-block;
+  background: #0d1b2a;
+  color: #ffffff;
+  padding: 18px 40px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+.fmb-proof-cta:hover {
+  background: #1a2d42;
+  transform: translateY(-1px);
+}
+@media (max-width: 768px) {
+  .fmb-proof-grid { grid-template-columns: 1fr; max-width: 400px; }
+}
+</style>
+<div class="fmb-proof">
+  <div class="fmb-proof-grid">
+    <div class="fmb-proof-card">
+      <div class="fmb-proof-num">35-40%</div>
+      <div class="fmb-proof-desc">Increase in booked appointments within the first 30 days for businesses using AI receptionists.</div>
+      <div class="fmb-proof-source">Source: Smith.ai / Numa industry reports</div>
+    </div>
+    <div class="fmb-proof-card">
+      <div class="fmb-proof-num">80%</div>
+      <div class="fmb-proof-desc">Of callers sent to voicemail will not leave a message. They hang up and call someone else.</div>
+      <div class="fmb-proof-source">Source: Forbes / RingCentral</div>
+    </div>
+    <div class="fmb-proof-card">
+      <div class="fmb-proof-num">90%</div>
+      <div class="fmb-proof-desc">Of consumers expect an immediate response to sales or service enquiries. "Immediate" means under 10 minutes.</div>
+      <div class="fmb-proof-source">Source: HubSpot State of Service Report</div>
+    </div>
+  </div>
+  <a href="#demo" class="fmb-proof-cta">Stop the leak, try the live demo</a>
+</div>
+
+
+<!-- SECTION 10: Final CTA - Dark Block -->
+<style>
+.fmb-final-cta {
+  background: #0d1b2a;
+  text-align: center;
+  padding: 100px 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.fmb-final-cta h2 {
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 auto 20px;
+  max-width: 650px;
+}
+.fmb-final-cta-sub {
+  font-size: 18px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 0 auto 40px;
+}
+.fmb-final-cta-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #0d1b2a;
+  padding: 18px 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+.fmb-final-cta-btn:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+.fmb-final-cta-note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+</style>
+<div class="fmb-final-cta">
+  <h2>Stop losing leads to voicemail.</h2>
+  <p class="fmb-final-cta-sub">Get your free personalised demo. Hear how your business would sound, in about thirty seconds.</p>
+  <a href="#demo" class="fmb-final-cta-btn">Get your free demo</a>
+  <p class="fmb-final-cta-note">No credit card. No commitment. Just listen.</p>
+</div>
+
+
+<!-- SECTION 11: FAQ Accordion -->
+<style>
+.fmb-faq {
+  padding: 80px 20px;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.fmb-faq-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d9488;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.fmb-faq h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  color: #0d1b2a;
+  text-align: center;
+  margin: 0 0 48px;
+}
+.fmb-faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+.fmb-faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 600;
+  color: #0d1b2a;
+  font-family: inherit;
+}
+.fmb-faq-q:hover { color: #374151; }
+.fmb-faq-icon {
+  font-size: 22px;
+  font-weight: 300;
+  color: #9ca3af;
+  flex-shrink: 0;
+  margin-left: 16px;
+  transition: transform 0.2s;
+}
+.fmb-faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.fmb-faq-a-inner {
+  padding: 0 0 24px;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+.fmb-faq-item.active .fmb-faq-a {
+  max-height: 300px;
+}
+.fmb-faq-item.active .fmb-faq-icon {
+  transform: rotate(45deg);
+}
+</style>
+<div class="fmb-faq" id="faq">
+  <div class="fmb-faq-label">COMMON QUESTIONS</div>
+  <h2>Frequently asked.</h2>
+
+  <div class="fmb-faq-item active">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      What exactly is an AI employee?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">A voice and chat assistant trained specifically on your business. It answers calls, replies to website chat, qualifies leads, books appointments, and follows up. All in your brand's voice. Think of it as a 24/7 receptionist who never takes a sick day.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      Will it sound like a robot?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">No. Most callers cannot tell they're speaking to AI. You can choose accent, tone, and pace to match your brand. Try the live demo at the top of this page and decide for yourself.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      How long does setup take?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">Most clients are live within 24 to 48 hours. The demo takes ten seconds to fire up. Once you sign on, our team handles the deeper training and integration, and you're answering real customers within a day or two.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      What if my customers prefer a human?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">The AI transfers to your team at any point. You set the rules. Some clients use it purely as overflow when calls are missed. Others use it as a first responder that hands off the complex stuff. Your call.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      Can I cancel anytime?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">Yes. No long-term contracts. Cancel in one click, no phone calls or retention scripts.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      How is this different from a chatbot?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">Most chatbots are scripted. They break the moment someone says something off-script. Our AI employees use modern reasoning models, are trained on your specific business data, and hold real conversations across voice and chat. They book appointments, not just answer FAQs.</div>
+    </div>
+  </div>
+
+  <div class="fmb-faq-item">
+    <button class="fmb-faq-q" onclick="fmbToggleFaq(this)">
+      Is my data safe?
+      <span class="fmb-faq-icon">+</span>
+    </button>
+    <div class="fmb-faq-a">
+      <div class="fmb-faq-a-inner">Yes. Conversations are encrypted, stored in UK data centres, and fully GDPR-compliant. You own your data. We never sell or share it, and you can export or delete it at any time.</div>
+    </div>
+  </div>
+</div>
+<script>
+function fmbToggleFaq(btn) {
+  var item = btn.parentElement;
+  var wasActive = item.classList.contains('active');
+  // Close all
+  var items = document.querySelectorAll('.fmb-faq-item');
+  for (var i = 0; i < items.length; i++) { items[i].classList.remove('active'); }
+  // Open clicked if it wasn't already open
+  if (!wasActive) { item.classList.add('active'); }
+}
+</script>
+
+
+<!-- SECTION 12: Footer -->
+<style>
+.fmb-footer {
+  padding: 80px 40px 0;
+  background: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  border-top: 1px solid #e5e7eb;
+}
+.fmb-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+.fmb-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d1b2a;
+  margin-bottom: 16px;
+}
+.fmb-footer-brand img {
+  height: 32px;
+}
+.fmb-footer-tagline {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+.fmb-footer-heading {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #374151;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.fmb-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.fmb-footer-links a {
+  font-size: 15px;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.fmb-footer-links a:hover {
+  color: #0d9488;
+}
+.fmb-footer-bottom {
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #9ca3af;
+}
+.fmb-footer-legal a {
+  color: #9ca3af;
+  text-decoration: none;
+  margin-left: 16px;
+}
+.fmb-footer-legal a:hover {
+  color: #6b7280;
+}
+@media (max-width: 768px) {
+  .fmb-footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .fmb-footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+}
+@media (max-width: 480px) {
+  .fmb-footer-grid { grid-template-columns: 1fr; }
+  .fmb-footer { padding: 48px 20px 0; }
+}
+</style>
+<footer class="fmb-footer">
+  <div class="fmb-footer-grid">
+    <div>
+      <div class="fmb-footer-brand">
+        <img src="https://fixmybiz.co.uk/logo.png" alt="Fix My Biz" onerror="this.style.display='none'">
+        Fix My Biz
+      </div>
+      <p class="fmb-footer-tagline">Turn your business into a 24/7 profit-generating machine. AI employees that qualify leads, schedule appointments, and handle customer service.</p>
+    </div>
+    <div>
+      <div class="fmb-footer-heading">Product</div>
+      <ul class="fmb-footer-links">
+        <li><a href="#demo">Try the demo</a></li>
+        <li><a href="#solution">Solution</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fmb-footer-heading">Company</div>
+      <ul class="fmb-footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Case studies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fmb-footer-heading">Get in Touch</div>
+      <ul class="fmb-footer-links">
+        <li><a href="tel:+448000884813">+44 800 088 4813</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#472f222b2b2807212e3f2a3e252e3d69292233"><span class="__cf_email__" data-cfemail="dbb3beb7b7b49bbdb2a3b6a2b9b2a1f5b5beaf">[email&#160;protected]</span></a></li>
+        <li><a href="#">Book a consultation</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fmb-footer-bottom">
+    <span>&copy; 2026 Fix My Biz. Solve. Grow. Succeed.</span>
+    <div class="fmb-footer-legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">GDPR</a>
+    </div>
+  </div>
+</footer>
+
+
+
+<!-- FIX 2: Overlay 'Try the live demo' button on phone mockup -->
+<style>
+  .fmb-demo-right { position: relative; }
+  .fmb-demo-cta-btn {
+      position: absolute !important;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
+      white-space: nowrap;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  @media (max-width: 920px) {
+    .fmb-demo-cta-btn { bottom: 12%; }
+  }
+</style>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  (function(){
+      function moveBtn(){
+            var btn = document.querySelector('.fmb-demo-cta-btn');
+            var right = document.querySelector('.fmb-demo-right');
+            if (btn && right && !right.contains(btn)) { right.appendChild(btn); }
+      }
+      if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', moveBtn);
+      } else { moveBtn(); }
+      setTimeout(moveBtn, 300);
+      setTimeout(moveBtn, 1200);
+  })();
+</script>
+
+<!-- SESSION 4 FIXES -->
+<style>
+  .fmb-demo-cta-btn {
+      position: static !important;
+      bottom: auto !important;
+      left: auto !important;
+      transform: none !important;
+      z-index: auto !important;
+      display: inline-block !important;
+      padding: 16px 32px !important;
+      background-color: #0d9488 !important;
+      color: #ffffff !important;
+      border-radius: 9999px !important;
+      font-weight: 600 !important;
+      font-size: 1.1rem !important;
+      text-decoration: none !important;
+      margin-bottom: 20px !important;
+      box-shadow: 0 8px 24px rgba(13,148,136,0.25) !important;
+      white-space: nowrap;
+  }
+  .fmb-demo-right {
+      position: static !important;
+      text-align: center !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+  .fmb-header {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+  }
+  .fmb-header-nav {
+      flex: 1 !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      gap: 32px !important;
+  }
+  .fmb-header-logo {
+      flex: 0 0 auto !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 10px !important;
+  }
+  .fmb-header-logo .fmb-header-logo-icon {
+      width: 36px !important;
+      height: 36px !important;
+      object-fit: contain !important;
+      display: inline-block !important;
+  }
+  .fmb-header-cta { flex: 0 0 auto !important; }
+</style>
+<script>
+  (function(){
+      function moveBtn(){
+            var btn = document.querySelector('.fmb-demo-cta-btn');
+            var right = document.querySelector('.fmb-demo-right');
+            if (btn && right && right.firstChild !== btn) {
+                    right.insertBefore(btn, right.firstChild);
+            }
+      }
+      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', moveBtn); } else { moveBtn(); }
+      setTimeout(moveBtn, 300);
+      setTimeout(moveBtn, 1200);
+  })();
+</script>
+</div>

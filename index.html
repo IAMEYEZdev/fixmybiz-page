@@ -12,6 +12,21 @@
     min-height: 100%;
     overflow-x: hidden;
   }
+  /* Iframe scroll wrapper — lets page scroll inside GHL iframe even with scrolling="no" */
+  .fmb-scroll-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch; /* smooth iOS scroll */
+  }
+  /* When wrapped, body shouldn't scroll itself */
+  body.fmb-in-iframe {
+    overflow: hidden;
+  }
 </style>
 </head>
 <body>
@@ -1309,6 +1324,25 @@ function fmbToggleFaq(btn) {
 </footer>
 
 
+
+<!-- Iframe scroll wrapper — enables full scrolling inside GHL iframe -->
+<script>
+(function() {
+  // Only activate when page is inside an iframe (i.e. GHL embed)
+  if (window.self !== window.top) {
+    document.body.classList.add('fmb-in-iframe');
+
+    var wrapper = document.createElement('div');
+    wrapper.className = 'fmb-scroll-wrapper';
+
+    // Move ALL body children into the wrapper
+    while (document.body.firstChild) {
+      wrapper.appendChild(document.body.firstChild);
+    }
+    document.body.appendChild(wrapper);
+  }
+})();
+</script>
 
 <!-- Height broadcaster for GHL iframe -->
 <script>

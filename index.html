@@ -83,7 +83,7 @@
 <div class="fmb-header">
   <a href="#" class="fmb-header-logo">
     <!-- Replace src with your uploaded logo URL -->
-    <img src="logo.png" alt="Fix My Biz" style="height:36px; flex-shrink:0; object-fit:contain;">
+    <img src="logo.jpg" alt="Fix My Biz" style="height:36px; flex-shrink:0; object-fit:contain;">
     Fix My Biz
   </a>
   <nav class="fmb-header-nav">
@@ -150,7 +150,7 @@
 </style>
 <div class="fmb-hero">
   <div class="fmb-hero-logo-wrap">
-    <img src="logo.png" alt="Fix My Biz - Solve. Grow. Succeed.">
+    <img src="logo.jpg" alt="Fix My Biz - Solve. Grow. Succeed.">
   </div>
   <h1>Never miss a call or lead, again.</h1>
   <p class="fmb-hero-sub">Nearly two-thirds of UK enquiries are lost to voicemail. Our AI employees answer every call, qualify every lead, and book every appointment. Day or night.</p>
@@ -1296,14 +1296,32 @@ function fmbToggleFaq(btn) {
 <script>
 (function() {
   function sendHeight() {
-    var height = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight);
+    var height = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
     window.parent.postMessage({ type: 'fixmybiz-height', height: height }, '*');
   }
+
+  // Send on load, resize, DOM changes
   sendHeight();
   setInterval(sendHeight, 500);
   window.addEventListener('resize', sendHeight);
-  // Also send after FAQ toggles or any DOM change
-  new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+  window.addEventListener('load', sendHeight);
+
+  // Send after every image finishes loading
+  var imgs = document.querySelectorAll('img');
+  for (var i = 0; i < imgs.length; i++) {
+    imgs[i].addEventListener('load', sendHeight);
+    imgs[i].addEventListener('error', sendHeight);
+  }
+
+  // MutationObserver for FAQ toggles and dynamic content
+  new MutationObserver(sendHeight).observe(document.body, {
+    childList: true, subtree: true, attributes: true
+  });
 })();
 </script>
 

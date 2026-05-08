@@ -100,12 +100,12 @@
 <style>
 .fmb-hero {
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 32px 20px 40px;
   background: #ffffff;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 .fmb-hero-logo-wrap {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 .fmb-hero-logo-wrap img {
   width: 280px;
@@ -123,7 +123,7 @@
   font-weight: 800;
   color: #0d1b2a;
   line-height: 1.1;
-  margin: 0 auto 24px;
+  margin: 0 auto 16px;
   max-width: 700px;
 }
 .fmb-hero-sub {
@@ -131,7 +131,7 @@
   color: #6b7280;
   line-height: 1.6;
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 24px;
 }
 .fmb-hero-btn {
   display: inline-block;
@@ -156,7 +156,7 @@
 </style>
 <div class="fmb-hero">
   <div class="fmb-hero-logo-wrap">
-    <svg width="220" height="220" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="30" fill="#0d9488"/><path d="M32 18c-1.5 0-2.8.6-3.8 1.6L26 21.8l-2.2-2.2c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8l2.2 2.2-2.2 2.2c-.4.4-.6.9-.6 1.4 0 .5.2 1 .6 1.4l8 8c.4.4.9.6 1.4.6s1-.2 1.4-.6l8-8c.8-.8.8-2 0-2.8L36 21.8l-2.2-2.2c-1-1-2.3-1.6-3.8-1.6z" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 38l4 4M26 38l4 4M30 38l4 4M34 38l4 4M38 38l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    <svg width="120" height="120" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="30" fill="#0d9488"/><path d="M32 18c-1.5 0-2.8.6-3.8 1.6L26 21.8l-2.2-2.2c-.8-.8-2-.8-2.8 0s-.8 2 0 2.8l2.2 2.2-2.2 2.2c-.4.4-.6.9-.6 1.4 0 .5.2 1 .6 1.4l8 8c.4.4.9.6 1.4.6s1-.2 1.4-.6l8-8c.8-.8.8-2 0-2.8L36 21.8l-2.2-2.2c-1-1-2.3-1.6-3.8-1.6z" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 38l4 4M26 38l4 4M30 38l4 4M34 38l4 4M38 38l4 4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
     <div class="fmb-hero-tagline">SOLVE. GROW. SUCCEED</div>
   </div>
   <h1>Never miss a call or lead, again.</h1>
@@ -1299,102 +1299,25 @@ function fmbToggleFaq(btn) {
 
 
 
-<!-- FIX 2: Overlay 'Try the live demo' button on phone mockup -->
-<style>
-  .fmb-demo-right { position: relative; }
-  .fmb-demo-cta-btn {
-      position: absolute !important;
-      bottom: 15%;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 10;
-      white-space: nowrap;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-  }
-  @media (max-width: 920px) {
-    .fmb-demo-cta-btn { bottom: 12%; }
-  }
-</style>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  (function(){
-      function moveBtn(){
-            var btn = document.querySelector('.fmb-demo-cta-btn');
-            var right = document.querySelector('.fmb-demo-right');
-            if (btn && right && !right.contains(btn)) { right.appendChild(btn); }
-      }
-      if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', moveBtn);
-      } else { moveBtn(); }
-      setTimeout(moveBtn, 300);
-      setTimeout(moveBtn, 1200);
-  })();
-</script>
-
-<!-- SESSION 4 FIXES -->
+<!-- Consolidated Session 4 overrides -->
 <style>
   .fmb-demo-cta-btn {
-      position: static !important;
-      bottom: auto !important;
-      left: auto !important;
-      transform: none !important;
-      z-index: auto !important;
-      display: inline-block !important;
-      padding: 16px 32px !important;
-      background-color: #0d9488 !important;
-      color: #ffffff !important;
-      border-radius: 9999px !important;
-      font-weight: 600 !important;
-      font-size: 1.1rem !important;
-      text-decoration: none !important;
-      margin-bottom: 20px !important;
-      box-shadow: 0 8px 24px rgba(13,148,136,0.25) !important;
+      display: inline-block;
+      padding: 16px 32px;
+      background-color: #0d9488;
+      color: #ffffff;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(13,148,136,0.25);
       white-space: nowrap;
   }
   .fmb-demo-right {
-      position: static !important;
-      text-align: center !important;
-      display: flex !important;
-      flex-direction: column !important;
-      align-items: center !important;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
   }
-  .fmb-header {
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-  }
-  .fmb-header-nav {
-      flex: 1 !important;
-      display: flex !important;
-      justify-content: center !important;
-      align-items: center !important;
-      gap: 32px !important;
-  }
-  .fmb-header-logo {
-      flex: 0 0 auto !important;
-      display: flex !important;
-      align-items: center !important;
-      gap: 10px !important;
-  }
-  .fmb-header-logo .fmb-header-logo-icon {
-      width: 36px !important;
-      height: 36px !important;
-      object-fit: contain !important;
-      display: inline-block !important;
-  }
-  .fmb-header-cta { flex: 0 0 auto !important; }
 </style>
-<script>
-  (function(){
-      function moveBtn(){
-            var btn = document.querySelector('.fmb-demo-cta-btn');
-            var right = document.querySelector('.fmb-demo-right');
-            if (btn && right && right.firstChild !== btn) {
-                    right.insertBefore(btn, right.firstChild);
-            }
-      }
-      if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', moveBtn); } else { moveBtn(); }
-      setTimeout(moveBtn, 300);
-      setTimeout(moveBtn, 1200);
-  })();
-</script>
-</div>
